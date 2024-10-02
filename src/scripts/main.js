@@ -1,6 +1,6 @@
 AOS.init();
 
-const dataEvento = new Date("Nov 13, 2024  14:00:00");
+const dataEvento = new Date("Dec 13, 2024  14:00:00");
 const timeStampDoEvento = dataEvento.getTime();
 
 const contaAshoras = setInterval(function(){
@@ -23,8 +23,8 @@ const contaAshoras = setInterval(function(){
     document.getElementById('contador').innerHTML = `${DiasAteoEvento}d ${HorasAteoEvento}h ${minutosAteoEvento}m ${segundosAteoEvento}s`;
     
     if(DistanciAteOEvento < 0){
-        clearInterval(contaAshoras)
-        document.getElementById('contator').innerHTML = `O evento foi expirado`
+        clearInterval(contaAshoras);
+        document.getElementById('letering').innerHTML = 'O Maior evento de tecnologia do Acabou, tente no Proximo ano';
     }
 
 }, 1000)
